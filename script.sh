@@ -21,11 +21,6 @@ echo "============="
 # Export
 export BUILD_USERNAME=Blazey66
 export BUILD_HOSTNAME=crave
-export BUILD_BROKEN_DUP_SYSPROP=true
-export BUILD_BROKEN_DUP_RULES=true
-export RELAX_USES_LIBRARY_CHECK=true
-export ALLOW_MISSING_DEPENDENCIES=true
-export BUILD_BROKEN_MISSING_REQUIRED_MODULES=true
 export BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES=true
 echo "======= Export Done ======"
 
