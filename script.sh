@@ -7,7 +7,7 @@ echo "Repo init success"
 echo "=================="
 
 #local_manifest
-git clone https://github.com/blazey66/local_manifest_clo.git -b a15 .repo/local_manifests
+git clone https://github.com/blazey66/local_manifest_clo.git -b crdroid-a15 .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
@@ -21,6 +21,12 @@ echo "============="
 # Export
 export BUILD_USERNAME=Blazey66
 export BUILD_HOSTNAME=crave
+export BUILD_BROKEN_DUP_SYSPROP=true
+export BUILD_BROKEN_DUP_RULES=true
+export RELAX_USES_LIBRARY_CHECK=true
+export ALLOW_MISSING_DEPENDENCIES=true
+export BUILD_BROKEN_MISSING_REQUIRED_MODULES=true
+export BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES=true
 echo "======= Export Done ======"
 
 # Set up build environment
@@ -28,4 +34,4 @@ echo "======= Export Done ======"
 echo "====== Envsetup Done ======="
 
 #build
-brunch Mi439_4_19 user
+brunch mi439
