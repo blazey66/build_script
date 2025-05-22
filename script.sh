@@ -21,7 +21,6 @@ echo "============="
 # Export
 export BUILD_USERNAME=Blazey66
 export BUILD_HOSTNAME=crave
-export BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES=true
 echo "======= Export Done ======"
 
 # Set up build environment
