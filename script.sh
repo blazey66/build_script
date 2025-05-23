@@ -7,7 +7,7 @@ echo "Repo init success"
 echo "=================="
 
 #local_manifest
-git clone https://github.com/blazey66/local_manifest_clo.git -b crdroid-a15 .repo/local_manifests
+git clone https://github.com/blazey66/local_manifest_clo.git -b test .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
