@@ -18,11 +18,6 @@ echo "============="
 echo "Sync success"
 echo "============="
 
-#ksu
-cd kernel/xiaomi/mithorium-4.19 &&
-curl -LSs https://raw.githubusercontent.com/backslashxx/KernelSU/magic/kernel/setup.sh | bash - &&
-cd ../../.. &&
-
 # Export
 export BUILD_USERNAME=Blazey66
 export BUILD_HOSTNAME=crave
