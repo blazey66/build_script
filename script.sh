@@ -19,7 +19,7 @@ echo "Sync success"
 echo "============="
 
 #ksu
-cd kernel/xiaomi/mithorium-4.19/kernel &&
+cd kernel/xiaomi/mithorium-4.19 &&
 curl -LSs https://raw.githubusercontent.com/backslashxx/KernelSU/magic/kernel/setup.sh | bash - &&
 cd ../../.. &&
 
