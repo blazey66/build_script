@@ -1,13 +1,13 @@
 rm -rf .repo/local_manifests/
 
 #repo init
-repo init --depth=1 --no-repo-verify -u https://github.com/crdroidandroid/android.git -b 15.0 -g default,-mips,-darwin,-notdefault
+repo init --depth=1 --no-repo-verify -u https://github.com/yaap/manifest.git -b fifteen -g default,-mips,-darwin,-notdefault
 echo "=================="
 echo "Repo init success"
 echo "=================="
 
 #local_manifest
-git clone https://github.com/blazey66/local_manifest.git -b crd/15 .repo/local_manifests
+git clone https://github.com/blazey66/local_manifests.git -b yaap .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
@@ -28,4 +28,4 @@ echo "======= Export Done ======"
 echo "====== Envsetup Done ======="
 
 #build
-brunch Mi439_4_19 user
+lunch yaap_mi439-userdebug && m yaap
