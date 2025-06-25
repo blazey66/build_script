@@ -28,4 +28,4 @@ echo "======= Export Done ======"
 echo "====== Envsetup Done ======="
 
 #build
-lunch yaap_mi439-user && m yaap
+lunch yaap_mi439-userdebug && m yaap
