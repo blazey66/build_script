@@ -7,7 +7,7 @@ echo "Repo init success"
 echo "=================="
 
 #local_manifest
-git clone https://github.com/blazey66/local_manifest.git -b crd/15 .repo/local_manifests
+git clone https://github.com/blazey66/local_manifests.git -b crd/15 .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
@@ -28,4 +28,4 @@ echo "======= Export Done ======"
 echo "====== Envsetup Done ======="
 
 #build
-brunch Mi439_4_19 user
+brunch mi439
