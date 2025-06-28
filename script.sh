@@ -31,4 +31,4 @@ echo "======= Export Done ======"
 echo "====== Envsetup Done ======="
 
 #build
-brunch mi439
+brunch mi439 user
