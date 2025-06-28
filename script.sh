@@ -18,6 +18,9 @@ echo "============="
 echo "Sync success"
 echo "============="
 
+#buke fsgen
+rm -rf build/soong/fsgen
+
 # Export
 export BUILD_USERNAME=Blazey66
 export BUILD_HOSTNAME=crave
