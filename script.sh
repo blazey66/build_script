@@ -1,13 +1,13 @@
 rm -rf .repo/local_manifests/
 
 #repo init
-repo init --depth=1 --no-repo-verify -u https://github.com/crdroidandroid/android.git -b 15.0 -g default,-mips,-darwin,-notdefault
+repo init --depth=1 --no-repo-verify -u https://github.com/VoltageOS/manifest.git -b 15-qpr2 -g default,-mips,-darwin,-notdefault
 echo "=================="
 echo "Repo init success"
 echo "=================="
 
 #local_manifest
-git clone https://github.com/blazey66/local_manifests.git -b crd/15 .repo/local_manifests
+git clone https://github.com/blazey66/local_manifests.git -b vos/15 .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
@@ -17,9 +17,6 @@ echo "============================"
 echo "============="
 echo "Sync success"
 echo "============="
-
-#nuke fsgen
-rm -rf build/soong/fsgen
 
 cd kernel/xiaomi/sdm439 && curl -LSs "https://raw.githubusercontent.com/backslashxx/KernelSU/refs/heads/magic/kernel/setup.sh" | bash -
 cd ../../..
@@ -34,4 +31,4 @@ echo "======= Export Done ======"
 echo "====== Envsetup Done ======="
 
 #build
-brunch mi439 user
+brunch mi439
