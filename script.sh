@@ -19,6 +19,7 @@ echo "============="
 echo "Sync success"
 echo "============="
 
+rm -rf build/soong/fsgen
 cd kernel/xiaomi/sdm439 && curl -LSs "https://raw.githubusercontent.com/backslashxx/KernelSU/refs/heads/magic/kernel/setup.sh" | bash -
 cd ../../..
 
