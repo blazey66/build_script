@@ -1,4 +1,5 @@
 rm -rf .repo/local_manifests/
+rm -rf prebuilts/clang/host/linux-x86
 
 #repo init
 repo init --depth=1 --no-repo-verify -u https://github.com/VoltageOS/manifest.git -b 15-qpr2 -g default,-mips,-darwin,-notdefault
