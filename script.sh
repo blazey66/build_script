@@ -28,11 +28,12 @@ export BUILD_USERNAME=Blazey66
 export BUILD_HOSTNAME=crave
 echo "======= Export Done ======"
 
-# Set up build environment
-. build/envsetup.sh
-echo "====== Envsetup Done ======="
-
-#build
-gk -s
-axion mi439 va
-ax -br
+# Vanilla Build
+. build/envsetup.sh && \
+gk -s && axion mi439 va user && make installclean && ax -br; \
+rm -rf out/target/product/vanilla && rm -rf out/target/product/gapps; \
+cd out/target/product && mv mi439 vanilla && cd ../../..; \
+# Gapps Build
+. build/envsetup.sh; \
+gk -s && axion mi439 gms core user && make installclean && ax -br; \
+cd out/target/product && mv mi439 gapps && cd ../../..; \
