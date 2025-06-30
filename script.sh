@@ -33,5 +33,6 @@ echo "======= Export Done ======"
 echo "====== Envsetup Done ======="
 
 #build
+gk -s
 axion mi439 va
 ax -br
